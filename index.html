@@ -24,94 +24,109 @@
     <header class="header">
       <div class="header__box container">
         <!--Navigation-->
+
         <a href="./index.html" lang="en" class="logo header__logo"
           ><span class="logo--accent">Web</span>Studio</a
         >
-        <!-- mobile/tablet-menu -->
-        <button
-          type="button"
-          class="mobile__button-open"
-          aria-expanded="false"
-          aria-controls="mobile__container"
-          mobile__button-open
-        >
-          <svg width="40" height="40" aria-label="кнопка мобильного меню">
+        <nav class="navigation">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link nav__link--current"
+                >Студия</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts__link contacts__link--mail"
+            >
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a
+              href="tel:+380961111111"
+              class="contacts__link contacts__link--phone"
+            >
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./images/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+        <button type="button" class="button__menu-open" data-menu-open>
+          <svg class="mobile__icon-menu" width="40" height="40">
+            <use href="./images/sprite.svg#hamburger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- <div class="mobile__menu is-hidden"> -->
+      <!-- <div class="mobile__menu-container">
+        <button type="button" class="button__menu-close" data-menu-close>
+          <svg class="mobile__icon-close" width="40" height="40">
             <use
-              href="./images/sprite.svg#hamburger"
-              class="mobile__icon-menu"
-              mobile__button-open
+              href="./images/sprite.svg#hamburger-close"
+              mobile__button-close
             ></use>
           </svg>
         </button>
 
-        <div class="mobile__container" id="mobile__container" mobile__menu>
-          <button
-            type="button"
-            class="mobile__button-close"
-            aria-expanded="false"
-            aria-controls="mobile__container"
-            mobile__button-close
-          >
-            <svg width="40" height="40" aria-label="кнопка мобильного меню">
-              <use
-                href="./images/sprite.svg#hamburger-close"
-                class="mobile__icon-close"
-                mobile__button-close
-              ></use>
-            </svg>
-          </button>
+        <nav>
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a
+                href="./index.html"
+                class="mobile-nav__link mobile-nav__link--current"
+              >
+                Студия
+              </a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="./portfolio.html" class="mobile-nav__link">Портфолио</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-contacts">
+          <ul class="mobile-contacts__list">
+            <li class="mobile-contacts__item">
+              <a href="tel:+380961111111" class="mobile-contacts-tel"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-contacts__item">
+              <a href="mailto:info@devstudio.com" class="mobile-contacts-mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
 
-          <nav class="navigation">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="./index.html" class="nav__link nav__link--current"
-                  >Студия</a
-                >
-              </li>
-              <li class="nav__item">
-                <a href="./portfolio.html" class="nav__link">Портфолио</a>
-              </li>
-              <li class="nav__item">
-                <a href="" class="nav__link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-
-          <div class="mobile__sidebar">
-            <ul class="contacts__list">
-              <li class="contacts__item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="contacts__link contacts__link--mail"
-                >
-                  <svg class="contacts__icon" width="16" height="12">
-                    <use href="./images/sprite.svg#envelope"></use>
-                  </svg>
-                  info@devstudio.com
-                </a>
-              </li>
-              <li class="contacts__item">
-                <a
-                  href="tel:+380961111111"
-                  class="contacts__link contacts__link--phone"
-                >
-                  <svg class="contacts__icon" width="10" height="16">
-                    <use href="./images/sprite.svg#smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11
-                </a>
-              </li>
-            </ul>
-
-            <div class="mobile-socials">
-              <a class="mobile-social__link" href="#">Instagram</a>
-              <a class="mobile-social__link" href="#">Twitter</a>
-              <a class="mobile-social__link" href="#">Facebook</a>
-              <a class="mobile-social__link" href="#">LinkedIn</a>
-            </div>
-          </div>
+          <ul class="mobile-socials">
+            <a class="mobile-social__link" href="#">Instagram</a>
+            <a class="mobile-social__link" href="#">Twitter</a>
+            <a class="mobile-social__link" href="#">Facebook</a>
+            <a class="mobile-social__link" href="#">LinkedIn</a>
+          </ul>
         </div>
-      </div>
+      </div> -->
+      <!-- </div> -->
     </header>
 
     <main>
@@ -239,13 +254,13 @@
           <ul class="team__list">
             <li class="team__item">
               <img
+                class="team__img"
                 srcset="
                   ./images/team/nashakomanda1.jpg 1x,
                   ./images/team/team1-@2x.jpg     2x
                 "
                 src="./images/team/nashakomanda1.jpg"
                 alt="Дизайнер продукта"
-                width="270"
               />
               <div class="team__description">
                 <h3 class="team__name">Игорь Демьяненко</h3>
@@ -284,13 +299,13 @@
             </li>
             <li class="team__item">
               <img
+                class="team__img"
                 srcset="
                   ./images/team/nashakomanda2.jpg 1x,
                   ./images/team/team2-@2x.jpg     2x
                 "
                 src="./images/team/nashakomanda2.jpg"
                 alt="Фронтенд разработчик"
-                width="270"
               />
               <div class="team__description">
                 <h3 class="team__name">Ольга Репина</h3>
@@ -329,13 +344,13 @@
             </li>
             <li class="team__item">
               <img
+                class="team__img"
                 srcset="
                   ./images/team/nashakomanda3.jpg 1x,
                   ./images/team/team3-@2x.jpg     2x
                 "
                 src="./images/team/nashakomanda3.jpg"
                 alt="Маркетолог"
-                width="270"
               />
               <div class="team__description">
                 <h3 class="team__name">Николай Тарасов</h3>
@@ -374,13 +389,13 @@
             </li>
             <li class="team__item">
               <img
+                class="team__img"
                 srcset="
                   ./images/team/nashakomanda4.jpg 1x,
                   ./images/team/team4-@2x.jpg     2x
                 "
                 src="./images/team/nashakomanda4.jpg"
                 alt="Веб дизайнер"
-                width="270"
               />
               <div class="team__description">
                 <h3 class="team__name">Михаил Ермаков</h3>
@@ -506,7 +521,7 @@
 
         <div class="footer__social-section">
           <p class="footer__social-title">присоединяйтесь</p>
-          <ul class="social__list">
+          <ul class="social__list footer__social-list">
             <li class="social__item">
               <a href="" class="social__link social__link--color">
                 <svg class="social__icon">
@@ -622,13 +637,13 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="./js/mobile-menu.js"></script>
   </body>
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./js/modal.js"></script>
+  <script defer src="./js/mobile-menu.js"></script>
 </html>

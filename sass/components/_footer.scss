@@ -26,13 +26,7 @@
   display: flex;
   margin-bottom: 20px;
   color: $background-hat-color;
-  text-align: center;
-
-  @media screen and (min-width: 1200px) {
-    text-align: left;
-  }
 }
-
 .footer__address {
   display: flex;
   width: 231px;
@@ -44,6 +38,7 @@
   @media screen and (min-width: 1200px) {
     text-align: left;
     margin-bottom: 0;
+    align-items: flex-start;
   }
 }
 
@@ -98,7 +93,9 @@
     margin-left: 70px;
   }
 }
-
+.footer__social-list {
+  justify-content: space-between;
+}
 .social__link--color {
   fill: $secondary-text-color;
   background-color: $footer-sociallink-color;
