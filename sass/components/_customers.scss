@@ -37,10 +37,10 @@
   width: calc((100% - #{60px}) / 2);
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - #{90px}) / 3);
+    flex-basis: calc((100% - #{90px}) / 3);
   }
   @media screen and (min-width: 1200px) {
-    width: calc((100% - #{180px}) / 6);
+    flex-basis: calc((100% - #{180px}) / 6);
     margin-bottom: 0;
   }
 }

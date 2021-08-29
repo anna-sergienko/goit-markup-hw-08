@@ -9,16 +9,16 @@
 }
 .filters__list {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   color: $background-team-color;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
-
+  margin-bottom: 40px;
   margin-left: -8px;
   margin-top: -15px;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
     justify-content: center;
@@ -45,16 +45,15 @@
   }
 }
 
-.filters__item:not(:first-child) {
-  margin-left: 8px;
-}
 .filters__item {
+  margin-left: 8px;
   margin-top: 15px;
 
   @media screen and (min-width: 768px) {
     margin-top: 0;
   }
 }
+
 .filters__button--active {
   color: $secondary-text-color;
   background-color: $accent-color;
@@ -64,6 +63,7 @@
     background-color: $accent-color;
   }
 }
+
 /* PORTFOLIO CATOLOG */
 .portfolio__link {
   display: block;
@@ -76,9 +76,6 @@
 }
 
 .portfolio__list {
-  margin-bottom: -30px;
-  justify-content: center;
-
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -86,20 +83,19 @@
   }
 }
 .portfolio__item {
-  border: 1px solid $portfolio-border-color;
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     margin-left: 30px;
-    width: cacl(100% - #{60px} / 2);
+    flex-basis: calc((100% - #{60px}) / 2);
   }
   @media screen and (min-width: 1200px) {
-    width: cacl(100% - #{90px} / 3);
+    flex-basis: calc((100% - #{90px}) / 3);
   }
 }
 
 .portfolio__description {
-  display: block;
+  border: 1px solid $portfolio-border-color;
   padding: 20px 24px;
 }
 .portfolio__name {

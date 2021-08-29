@@ -158,7 +158,7 @@
     width: 100%;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1200px) {
     width: 448px;
 
     &::placeholder {
@@ -207,7 +207,7 @@
       outline: 1px solid $accent-color;
     }
   }
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
   }
@@ -217,7 +217,7 @@
   text-decoration: underline $accent-color;
   font-size: 12px;
   line-height: 1.16;
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
   }
