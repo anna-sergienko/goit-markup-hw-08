@@ -23,7 +23,7 @@
   <body>
     <header class="header">
       <div class="header__box container">
-        <!--Navigation-->
+        <!--NAVIGATION-->
 
         <a href="./index.html" lang="en" class="logo header__logo"
           ><span class="logo--accent">Web</span>Studio</a
@@ -68,11 +68,13 @@
             </a>
           </li>
         </ul>
-        <!--КНОПКА ОТКРЫТИЯ МОБИЛЬНОГО МЕНЮ  -->
+
+        <!--MOBILE MENU OPENER-->
+
         <button
           class="menu-button js-open-menu"
           aria-expanded="false"
-          aria-controls="mobile__menu"
+          aria-controls="mobile-menu"
         >
           <svg
             class="menu-button__open"
@@ -85,9 +87,11 @@
         </button>
       </div>
 
-      <!-- МОБИЛЬНОЕ МЕНЮ -->
+      <!-- MOBILE MENU -->
+
       <div class="menu-container js-menu-container" id="mobile-menu">
-        <!--КНОПКА ЗАКРЫТИЯ МОБИЛЬНОГО МЕНЮ  -->
+        <!--MOBILE MENU CLOSER -->
+
         <button class="menu-button js-close-menu" type="button">
           <svg
             class="menu-button__close"
@@ -107,7 +111,11 @@
             <nav class="mobile-nav">
               <ul class="mobile-nav__list">
                 <li class="mobile-nav__item">
-                  <a href="./index.html" class="mobile-nav__link">Студия</a>
+                  <a
+                    href="./index.html"
+                    class="mobile-nav__link mobile-nav__link--current"
+                    >Студия</a
+                  >
                 </li>
                 <li class="mobile-nav__item">
                   <a href="./portfolio.html" class="mobile-nav__link"
@@ -119,7 +127,9 @@
                 </li>
               </ul>
             </nav>
+          </div>
 
+          <div class="mobile-socials">
             <ul class="mobile-contacts">
               <li class="mobile-contacts__item">
                 <a href="tel:+380961111111" class="mobile-contacts__tel"
@@ -134,20 +144,28 @@
                 >
               </li>
             </ul>
-          </div>
-
-          <div class="mobile-socials">
-            <a class="mobile-socials__link" href="#">Instagram</a>
-            <a class="mobile-socials__link" href="#">Twitter</a>
-            <a class="mobile-socials__link" href="#">Facebook</a>
-            <a class="mobile-socials__link" href="#">LinkedIn</a>
+            <ul class="mobile-socials__list">
+              <li class="mobile-socials__item">
+                <a class="mobile-socials__link" href="#">Instagram</a>
+              </li>
+              <li class="mobile-socials__item">
+                <a class="mobile-socials__link" href="#">Twitter</a>
+              </li>
+              <li class="mobile-socials__item">
+                <a class="mobile-socials__link" href="#">Facebook</a>
+              </li>
+              <li class="mobile-socials__item">
+                <a class="mobile-socials__link" href="#">LinkedIn</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </header>
 
     <main>
-      <!--Hero-->
+      <!--HERO-->
+
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -157,7 +175,8 @@
         </div>
       </section>
 
-      <!--Advantages-->
+      <!--ADVANTAGES-->
+
       <section class="advantages">
         <div class="container">
           <h2 hidden>Особенности</h2>
@@ -214,7 +233,8 @@
         </div>
       </section>
 
-      <!--Activity-->
+      <!--ACTIVITY-->
+
       <section class="activity">
         <div class="container">
           <h2 class="activity__title">Чем мы занимаемся</h2>
@@ -228,7 +248,6 @@
                   "
                   src="./images/activity/activity-1.jpg"
                   alt="Программист работает за столом в офисе"
-                  width="370"
                 />
                 <p class="activity__overlap-text">Десктопные приложения</p>
               </div>
@@ -243,7 +262,6 @@
                   src="./images/activity/activity-2.jpg"
                   alt="Дизайнеры разрабатывают
                 приложения для смартфонов"
-                  width="370"
                 />
                 <p class="activity__overlap-text">Мобильные приложения</p>
               </div>
@@ -256,6 +274,7 @@
                     ./images/activity/activity-3-@2x.jpg 2x
                   "
                   src="./images/activity/activity-3.jpg"
+                  alt="Креативный художник веб-дизайна с рабочим графическим планшетом"
                 />
                 <p class="activity__overlap-text">Дизайнерские решения</p>
               </div>
@@ -264,7 +283,8 @@
         </div>
       </section>
 
-      <!--Team-->
+      <!--TEAM-->
+
       <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
@@ -454,6 +474,7 @@
       </section>
 
       <!-- CUSTOMERS -->
+
       <section class="customers section">
         <div class="container">
           <h2 class="customers__title">Постоянные клиенты</h2>
@@ -505,7 +526,8 @@
       </section>
     </main>
 
-    <!--Footer-->
+    <!--FOOTER-->
+
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__address">
@@ -589,7 +611,8 @@
       </div>
     </footer>
 
-    <!-- Modal window -->
+    <!-- MODAL WINDOW -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close type="button" class="modal__close-button">
@@ -597,6 +620,9 @@
             <use href="./images/sprite.svg#icon-modal-window-close"></use>
           </svg>
         </button>
+
+        <!-- FORM -->
+
         <form class="form">
           <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
 
@@ -654,13 +680,13 @@
         </form>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
-  <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
-  <script src="./js/modal.js"></script>
-  <script defer src="./js/mobile-menu.js"></script>
 </html>
