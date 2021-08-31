@@ -50,14 +50,13 @@
   }
 }
 
-​.menu-button__open {
+.menu-button__open {
   padding: 0;
-  margin-left: auto;
   background-color: transparent;
+  margin-left: auto;
   border: none;
   cursor: pointer;
 }
-
 .menu-button__close {
   position: absolute;
   top: 10px;
@@ -98,16 +97,12 @@
 }
 
 .mobile-nav__link {
-  display: block;
-  margin-bottom: 32px;
-
+  // display: block;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02em;
-
   color: $title-text-color;
-  text-decoration: none;
 
   @include transition1(color);
 
@@ -115,6 +110,9 @@
   &:focus {
     color: $accent-color;
   }
+}
+.mobile-nav__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 .mobile-nav__link--current {
   color: $accent-color;

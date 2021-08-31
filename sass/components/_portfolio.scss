@@ -22,6 +22,7 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
     justify-content: center;
+    margin-top: 0;
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
@@ -66,7 +67,9 @@
 
 /* PORTFOLIO CATOLOG */
 .portfolio__link {
-  display: block;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   @include transition1(box-shadow);
   &:hover,
   &:focus {
@@ -76,13 +79,9 @@
 }
 
 .portfolio__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   @media screen and (min-width: 768px) {
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
     margin-left: -30px;
   }
 }
@@ -95,11 +94,15 @@
     flex-basis: calc((100% - #{90px}) / 3);
   }
 }
+
 .portfolio__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
 .portfolio__description {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   padding: 20px 24px;
   border-right: 1px solid $portfolio-border-color;
   border-bottom: 1px solid $portfolio-border-color;
@@ -112,6 +115,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 .portfolio__text {
   font-size: 16px;
@@ -122,16 +126,6 @@
 }
 .portfolio__img {
   width: 100vw;
-  width: 450px;
-
-  @media screen and (min-width: 768px) {
-    max-width: 354px;
-    width: 354px;
-  }
-  @media screen and (min-width: 1200px) {
-    max-width: 370px;
-    width: 370px;
-  }
 }
 
 .portfolio__overlay {

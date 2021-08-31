@@ -5,6 +5,13 @@
 .header__box {
   display: flex;
   align-items: center;
+  position: relative;
+}
+.js-open-menu {
+  position: absolute;
+  top: 10px;
+  right: 2px;
+  margin: 0;
 }
 
 // LOGO

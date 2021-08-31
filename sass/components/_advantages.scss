@@ -12,7 +12,7 @@
 }
 
 .advantages__item {
-  margin-right: 30px;
+  margin-left: 30px;
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - #{60px}) / 2);
@@ -29,7 +29,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: -30px;
+  margin-left: -30px;
 }
 
 .advantages__title {
