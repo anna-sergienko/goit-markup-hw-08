@@ -24,7 +24,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   visibility: 1;
-  @include transition1(transform);
+  @include transition1(visibility);
 
   @media screen and (max-width: 767px) {
     max-width: 450px;
@@ -35,11 +35,13 @@
 
   @media screen and (min-width: 768px) {
     width: 450px;
+
     height: 609px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 528px;
+
     height: 581px;
   }
 }
@@ -91,7 +93,7 @@
 }
 .form__field {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .form__input {
   padding-left: 42px;
@@ -194,11 +196,6 @@
     border-radius: 2px;
     margin-right: 9px;
     cursor: pointer;
-
-    @media screen and (max-width: 480px) {
-      display: inline-block;
-    }
-
     .form__checkbox:checked + & {
       background-image: url(../images/icon-check.svg);
       background-size: cover;
@@ -207,6 +204,9 @@
 
     .form__checkbox:focus + & {
       outline: 1px solid $accent-color;
+    }
+    @media screen and (max-width: 480px) {
+      display: inline-block;
     }
   }
 
